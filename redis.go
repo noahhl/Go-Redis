@@ -271,6 +271,9 @@ type Client interface {
 
 	// Redis ZREM command.
 	Zrem(key string, arg1 []byte) (result bool, err Error)
+	
+    // Redis ZREMRANGEBYSCORE command.
+	Zremrangebyscore(key string, arg1 float64, arg2 float64) (result bool, err Error)
 
 	// Redis ZCARD command.
 	Zcard(key string) (result int64, err Error)

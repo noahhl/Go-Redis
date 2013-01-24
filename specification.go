@@ -172,6 +172,7 @@ var (
 	HGETALL       Command = Command{"HGETALL", KEY, MULTI_BULK}
 	ZADD          Command = Command{"ZADD", KEY_IDX_VALUE, BOOLEAN}
 	ZREM          Command = Command{"ZREM", KEY_VALUE, BOOLEAN}
+	ZREMRANGEBYSCORE Command = Command{"ZREMRANGEBYSCORE", KEY_NUM_NUM, BOOLEAN}
 	ZCARD         Command = Command{"ZCARD", KEY, NUMBER}
 	ZSCORE        Command = Command{"ZSCORE", KEY_VALUE, BULK}
 	ZRANGE        Command = Command{"ZRANGE", KEY_NUM_NUM, MULTI_BULK}
